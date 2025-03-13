@@ -135,16 +135,18 @@ Go to any public GitHub repository and click on the Fork button.
 Clone Your Forked Repository:
 
 After forking, clone your forked repository to your local machine.
-bash
+```bash
 Copy
 git clone https://github.com/yourusername/forked-repo.git
 cd forked-repo
+```
 Make Changes, Commit, and Push to Your Forked Repo:
 
 Make changes, add files, and commit them as shown in previous steps. Then, push to your forked repository:
-bash
+```bash
 Copy
 git push origin master
+```
 Create a Pull Request to the Original Repository:
 
 Go back to the original repository (where you forked from) and create a pull request from your fork.
@@ -152,7 +154,7 @@ Wait for review and possibly merge your changes into the original project.
 14. Pull Changes from the Original Repository (Sync Fork)
 If you want to keep your fork up to date with the original repository, you can pull the latest changes from the original repository.
 
-bash
+```bash
 Copy
 # Add the original repository as an upstream remote
 git remote add upstream https://github.com/original-owner/repo-name.git
@@ -166,28 +168,30 @@ git merge upstream/master
 
 # Push the updated changes to your fork
 git push origin master
+```
 15. Additional Git Commands for Practice
 Check the status of your repository:
 
-bash
+```bash
 Copy
 git status
+```
 View the commit history:
 
-bash
+```bash
 Copy
 git log
+```
 Undo the last commit (but keep the changes):
 
-bash
+```bash
 Copy
 git reset --soft HEAD~1
+```
 Remove a file from the staging area:
 
-bash
+```bash
 Copy
 git reset <file>
+```
 Show the diff between changes:
-
-bash
-Copy
